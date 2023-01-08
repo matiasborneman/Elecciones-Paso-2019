@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="Intro" prefHeight="290.0" prefWidth="479.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaz.LoadingController">
+   <children>
+      <ImageView fitHeight="227.0" fitWidth="487.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IntroEP2019.jpg" />
+         </image></ImageView>
+      <ProgressBar fx:id="pgb_inicio" layoutX="16.0" layoutY="240.0" prefHeight="26.0" prefWidth="446.0" progress="0.0" />
+   </children>
+</AnchorPane>

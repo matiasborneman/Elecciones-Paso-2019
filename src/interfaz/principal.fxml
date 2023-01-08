@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="ventana" maxHeight="436.0" maxWidth="650.0" minHeight="394.0" minWidth="650.0" prefHeight="436.0"
+            prefWidth="650.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="interfaz.PrincipalController">
+   <Button fx:id="btnCambiar" layoutX="530.0" layoutY="14.0" mnemonicParsing="false" onAction="#cambiarUbicacion"
+           text="Cambiar...">
+      <cursor>
+         <Cursor fx:constant="HAND"/>
+      </cursor>
+   </Button>
+
+   <Label fx:id="lblUbicacion" layoutX="111.0" layoutY="18.0" prefHeight="17.0" prefWidth="347.0" text="C:\TPU">
+      <font>
+         <Font name="System Bold" size="12.0"/>
+      </font>
+   </Label>
+   <Label layoutX="14.0" layoutY="18.0" text="Origen de datos:"/>
+   <Button fx:id="btnCargar" layoutX="14.0" layoutY="47.0" mnemonicParsing="false" onAction="#cargarDatos"
+           onMousePressed="#cursorenEspera" text="Cargar datos"/>
+   <ComboBox fx:id="cmbDistritos" disable="true" layoutX="75.0" layoutY="91.0" onAction="#elegirDistrito"
+             prefHeight="25.0" prefWidth="339.0" promptText="Elija la Provincia..."/>
+   <ComboBox fx:id="cmbSecciones" disable="true" layoutX="75.0" layoutY="129.0" onAction="#elegirSeccion"
+             prefHeight="25.0" prefWidth="339.0" promptText="Elija la Sección..."/>
+   <ComboBox fx:id="cmbCircuitos" disable="true" layoutX="75.0" layoutY="166.0" onAction="#elegirCircuito"
+             prefHeight="25.0" prefWidth="339.0" promptText="Elija el Circuito..."/>
+   <ComboBox fx:id="cmbMesas" disable="true" layoutX="75.0" layoutY="206.0" onAction="#elegirMesa" prefHeight="25.0"
+             prefWidth="339.0" promptText="Elija la Mesa..."/>
+   <Button fx:id="btn_totales" disable="true" layoutX="482.0" layoutY="215.0" mnemonicParsing="false"
+           onAction="#cargarResultadosTotales" onMousePressed="#cursorenEspera" prefHeight="25.0" prefWidth="134.0"
+           text="Conteos Totales"/>
+   <Label layoutX="14.0" layoutY="95.0" text="Distritos:"/>
+   <Label layoutX="14.0" layoutY="133.0" text="Sección:"/>
+   <Label layoutX="13.0" layoutY="170.0" text="Circuitos:"/>
+   <Label layoutX="13.0" layoutY="210.0" text="Mesa:"/>
+   <Label layoutX="17.0" layoutY="240.0" text="Resultados:"/>
+   <ListView fx:id="lvwResultados" layoutX="13.0" layoutY="262.0" prefHeight="168.0" prefWidth="627.0"/>
+   <Line endX="520.0" layoutX="116.0" layoutY="81.0" startX="-100.0"/>
+   <Line endX="520.0" layoutX="116.0" layoutY="257.0" startX="-28.0"/>
+</AnchorPane>
